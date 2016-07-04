@@ -15,11 +15,7 @@
    $annotation = $_GET['n'];
    $datainvio  = $_GET['tt'];
    $date = date('Y-m-d H:i:s',time());
-   
-   echo $datainvio;
-   echo $_GET['tt'];
-   echo "----------------------------";
-   echo $date;
+
    if (!$stmt->bind_param("ddssss", $latitude, $longitude, $device, $annotation, $datainvio, $date)) {
       echo "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error;
    }
