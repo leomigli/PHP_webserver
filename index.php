@@ -1,5 +1,5 @@
 <?php
-echo "test di commit"
+echo "test di commit 2"
    $mysqli = new mysqli('localhost', 'test', 'sa', 'geolog');
    if ($mysqli->connect_errno) {
       echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
